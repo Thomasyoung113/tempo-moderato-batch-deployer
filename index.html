@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempo Batch Deployer | Deploy 1000 Contracts in Seconds</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="logo">⚡</span>
+            <span class="brand-text">Tempo<span class="accent">Deployer</span></span>
+        </div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#stats">Stats</a>
+            <a href="#setup">Setup</a>
+            <a href="https://github.com/Thomasyoung113/tempo-moderato-batch-deployer" target="_blank" class="btn btn-outline">
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+            </a>
+        </div>
+        <button class="mobile-menu-btn">☰</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="badge">
+                <span class="pulse"></span>
+                Tempo Moderato Testnet
+            </div>
+            <h1>Deploy <span class="gradient-text">1,000 Contracts</span><br>in 22 Seconds</h1>
+            <p class="hero-subtitle">The fastest batch contract deployer for Tempo blockchain. Deploy NFTs and smart contracts at unprecedented speed.</p>
+            <div class="hero-buttons">
+                <a href="#setup" class="btn btn-primary">
+                    <span>Get Started</span>
+                    <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="https://explore.tempo.xyz" target="_blank" class="btn btn-secondary">
+                    View Explorer
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value">43.69</span>
+                    <span class="stat-label">Contracts/sec</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-value">50%</span>
+                    <span class="stat-label">NFT Contracts</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-value">∞</span>
+                    <span class="stat-label">Auto Rounds</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="terminal-title">deploy.js</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="line"><span class="prompt">$</span> npm run auto</div>
+                    <div class="line output">🔗 Connecting to Tempo Moderato...</div>
+                    <div class="line output success">✓ Connected to chain: 42431</div>
+                    <div class="line output">📦 Deploying Simple Contracts...</div>
+                    <div class="line output progress">Progress: 500/1000 (50%)</div>
+                    <div class="line output">🎨 Deploying NFT Contracts...</div>
+                    <div class="line output progress">Progress: 1000/1000 (100%)</div>
+                    <div class="line output success">✅ Deployed 1000 contracts in 22s</div>
+                    <div class="line output">⏳ Next round in 5 seconds...</div>
+                    <div class="line typing"><span class="cursor">_</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="section-header">
+            <h2>Why <span class="gradient-text">TempoDeployer</span>?</h2>
+            <p>Built for speed, designed for scale</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Lightning Fast</h3>
+                <p>Deploy 1000 unique contracts in just 22 seconds with parallel transaction processing.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>NFT Ready</h3>
+                <p>50% NFT contracts, 50% simple contracts. Each one unique with custom metadata.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔄</div>
+                <h3>Auto Loop</h3>
+                <p>Set it and forget it. Continuous deployment with configurable rounds and delays.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔐</div>
+                <h3>Secure</h3>
+                <p>Private keys stored in .env file. Never exposed in code or logs.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Full Reports</h3>
+                <p>JSON reports with all contract addresses and explorer links after each deployment.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <h3>Explorer Ready</h3>
+                <p>All contracts instantly visible on Tempo Explorer with verified transactions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats-section">
+        <div class="stats-container">
+            <div class="big-stat">
+                <div class="big-stat-value" data-count="1000">0</div>
+                <div class="big-stat-label">Contracts Per Round</div>
+            </div>
+            <div class="big-stat">
+                <div class="big-stat-value" data-count="22">0</div>
+                <div class="big-stat-label">Seconds Per Round</div>
+            </div>
+            <div class="big-stat">
+                <div class="big-stat-value" data-count="42431">0</div>
+                <div class="big-stat-label">Chain ID</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Network Info -->
+    <section class="network-info">
+        <div class="section-header">
+            <h2>Network <span class="gradient-text">Configuration</span></h2>
+            <p>Tempo Moderato Testnet Details</p>
+        </div>
+        <div class="network-card">
+            <div class="network-grid">
+                <div class="network-item">
+                    <span class="network-label">Network</span>
+                    <span class="network-value">Tempo Testnet (Moderato)</span>
+                </div>
+                <div class="network-item">
+                    <span class="network-label">Chain ID</span>
+                    <span class="network-value mono">42431</span>
+                </div>
+                <div class="network-item">
+                    <span class="network-label">RPC URL</span>
+                    <span class="network-value mono">https://rpc.moderato.tempo.xyz</span>
+                </div>
+                <div class="network-item">
+                    <span class="network-label">WebSocket</span>
+                    <span class="network-value mono">wss://rpc.moderato.tempo.xyz</span>
+                </div>
+                <div class="network-item">
+                    <span class="network-label">Explorer</span>
+                    <a href="https://explore.tempo.xyz" target="_blank" class="network-value mono link">https://explore.tempo.xyz</a>
+                </div>
+                <div class="network-item">
+                    <span class="network-label">Currency</span>
+                    <span class="network-value">USD</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Setup Section -->
+    <section id="setup" class="setup-section">
+        <div class="section-header">
+            <h2>Quick <span class="gradient-text">Setup</span></h2>
+            <p>Get deploying in under a minute</p>
+        </div>
+        <div class="setup-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Clone Repository</h3>
+                    <div class="code-block">
+                        <code>git clone https://github.com/Thomasyoung113/tempo-moderato-batch-deployer.git</code>
+                        <button class="copy-btn" onclick="copyCode(this)">📋</button>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Install Dependencies</h3>
+                    <div class="code-block">
+                        <code>cd tempo-moderato-batch-deployer && npm install</code>
+                        <button class="copy-btn" onclick="copyCode(this)">📋</button>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Configure Environment</h3>
+                    <div class="code-block">
+                        <code>cp .env.example .env && echo "PRIVATE_KEY=your_key" > .env</code>
+                        <button class="copy-btn" onclick="copyCode(this)">📋</button>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Deploy!</h3>
+                    <div class="code-block">
+                        <code>npm run auto</code>
+                        <button class="copy-btn" onclick="copyCode(this)">📋</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commands Section -->
+    <section class="commands-section">
+        <div class="section-header">
+            <h2>Available <span class="gradient-text">Commands</span></h2>
+        </div>
+        <div class="commands-grid">
+            <div class="command-card">
+                <code>npm run deploy</code>
+                <p>Single round - 1000 contracts</p>
+            </div>
+            <div class="command-card">
+                <code>npm run test</code>
+                <p>Test mode - 10 contracts</p>
+            </div>
+            <div class="command-card">
+                <code>npm run auto</code>
+                <p>Unlimited auto-deploy</p>
+            </div>
+            <div class="command-card">
+                <code>npm run auto:10</code>
+                <p>10 rounds - 10,000 contracts</p>
+            </div>
+            <div class="command-card">
+                <code>npm run auto:100</code>
+                <p>100 rounds - 100,000 contracts</p>
+            </div>
+            <div class="command-card">
+                <code>--delay=N</code>
+                <p>Custom delay between rounds</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to Deploy?</h2>
+            <p>Start deploying thousands of contracts on Tempo Moderato testnet today.</p>
+            <div class="cta-buttons">
+                <a href="https://github.com/Thomasyoung113/tempo-moderato-batch-deployer" target="_blank" class="btn btn-primary btn-large">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    View on GitHub
+                </a>
+                <a href="https://docs.tempo.xyz" target="_blank" class="btn btn-secondary btn-large">
+                    Tempo Docs
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo">⚡</span>
+                <span>TempoDeployer</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://tempo.xyz" target="_blank">Tempo</a>
+                <a href="https://explore.tempo.xyz" target="_blank">Explorer</a>
+                <a href="https://docs.tempo.xyz" target="_blank">Docs</a>
+                <a href="https://github.com/Thomasyoung113/tempo-moderato-batch-deployer" target="_blank">GitHub</a>
+            </div>
+            <div class="footer-copy">
+                Built for the Tempo ecosystem 🚀
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Copy code functionality
+        function copyCode(btn) {
+            const code = btn.previousElementSibling.textContent;
+            navigator.clipboard.writeText(code);
+            btn.textContent = '✓';
+            setTimeout(() => btn.textContent = '📋', 2000);
+        }
+
+        // Animate stats on scroll
+        const observerOptions = { threshold: 0.5 };
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counters = entry.target.querySelectorAll('[data-count]');
+                    counters.forEach(counter => {
+                        const target = parseInt(counter.dataset.count);
+                        const duration = 2000;
+                        const step = target / (duration / 16);
+                        let current = 0;
+                        const timer = setInterval(() => {
+                            current += step;
+                            if (current >= target) {
+                                counter.textContent = target.toLocaleString();
+                                clearInterval(timer);
+                            } else {
+                                counter.textContent = Math.floor(current).toLocaleString();
+                            }
+                        }, 16);
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.stats-container').forEach(el => statsObserver.observe(el));
+
+        // Mobile menu
+        document.querySelector('.mobile-menu-btn').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
