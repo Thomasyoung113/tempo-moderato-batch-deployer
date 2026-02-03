@@ -1,0 +1,17 @@
+{
+  "name": "simple-tempo-contract-1k",
+  "version": "1.0.0",
+  "description": "Fast deployer for 1000 unique contracts on Tempo Moderato testnet",
+  "main": "deploy.js",
+  "scripts": {
+    "deploy": "node deploy.js",
+    "test": "node deploy.js --test",
+    "auto": "node deploy.js --auto",
+    "auto:10": "node deploy.js --auto --rounds=10",
+    "auto:100": "node deploy.js --auto --rounds=100"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.0"
+  }
+}
